@@ -1,0 +1,44 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Card from "../../components/Card.astro";
+---
+
+<Layout title="新手教程">
+    <h2>走进开源世界</h2>
+    <ul role="list" class="link-card-grid">
+        <Card
+                href="newbie"
+                title="1. 从开源开始"
+
+        />
+        <Card
+                href="step1"
+                title="2. 开源第一步"
+        />
+        <Card
+                href="001"
+                title="3. 0.0.1"
+        />
+        <Card
+                href="010"
+                title="4. 0.1.0"
+        />
+        <Card
+                href="020"
+                title="5. 0.2.0"
+        />
+        <Card
+                href="more"
+                title="6. 0.2.0"
+        />
+    </ul>
+
+</Layout>
+<style>
+    .link-card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+        gap: 2rem;
+        padding: 0;
+    }
+</style>

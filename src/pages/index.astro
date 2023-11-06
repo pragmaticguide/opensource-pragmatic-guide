@@ -8,7 +8,7 @@ import Card from '../components/Card.astro';
 		<div class="col-lg-6 mx-auto">
 			<p class="lead mb-4">从这里开始你的开源第一步，加入开源社区，参与开源、贡献开源，最终成就开源。</p>
 			<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-				<a href="/guides/newbie" class="btn btn-primary btn-lg px-4 gap-3">走进开源世界</a>
+				<a href="/guides/" class="btn btn-primary btn-lg px-4 gap-3">走进开源世界</a>
 			</div>
 		</div>
 	</div>
@@ -16,7 +16,7 @@ import Card from '../components/Card.astro';
 
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="/guides/newbie"
+				href="/guides/"
 				title="给新手的教程"
 				body="从这里开始你的开源社区第一步"
 			/>
@@ -40,33 +40,6 @@ import Card from '../components/Card.astro';
 </Layout>
 
 <style>
-
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
 	.link-card-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
