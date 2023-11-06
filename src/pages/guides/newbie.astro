@@ -1,0 +1,15 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, getEntry } from 'astro:content';
+
+
+const entry = await getEntry('guides', 'start');
+const { Content, headings } = await entry.render();
+
+
+---
+<Layout title="新手教程">
+    <main>
+        <div><Content /></div>
+    </main>
+</Layout>
