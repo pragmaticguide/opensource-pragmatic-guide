@@ -5,6 +5,8 @@ interface Props {
 
 const { title } = Astro.props;
 import 'bootstrap/dist/css/bootstrap.css'
+import { ViewTransitions } from 'astro:transitions';
+
 
 ---
 
@@ -16,6 +18,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<ViewTransitions />
 	</head>
 	<body>
 		<nav class="py-2 bg-body-tertiary border-bottom">
