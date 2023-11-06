@@ -1,4 +1,5 @@
 # build output
+package-lock.json
 dist/
 
 # generated types
