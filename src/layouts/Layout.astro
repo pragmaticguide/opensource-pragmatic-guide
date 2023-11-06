@@ -4,10 +4,12 @@ interface Props {
 }
 
 const { title } = Astro.props;
+import 'bootstrap/dist/css/bootstrap.css'
+
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -16,57 +18,35 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<h1>实用开源教程</h1>
-		<slot />
+		<nav class="py-2 bg-body-tertiary border-bottom">
+			<div class="container d-flex flex-wrap">
+				<ul class="nav me-auto">
+					<li class="nav-item"><a href="https://linux.cn" class="nav-link link-body-emphasis px-2 active" aria-current="page">Linux.cn</a></li>
+				</ul>
+				<ul class="nav">
+					<li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Github</a></li>
+				</ul>
+			</div>
+		</nav>
+		<header class="py-3 mb-4 border-bottom">
+			<div class="container d-flex flex-wrap justify-content-center">
+				<a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+					<span class="h1">实用开源教程</span>
+				</a>
+				<ul class="nav nav-pills">
+					<li class="nav-item"><a href="#" class="nav-link">链接</a></li>
+
+					<li class="nav-item"><a href="#" class="nav-link">常见问题</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">关于</a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="container">
+			<slot />
+		</div>
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-		color: white;
-	}
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	img {
-		max-width: 100%;
-	}
+
 
 </style>

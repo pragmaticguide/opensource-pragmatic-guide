@@ -3,19 +3,17 @@ import Layout from '../../layouts/Layout.astro';
 import { getCollection, getEntry } from 'astro:content';
 
 
-const entry = await getEntry('guides', 'start');
+const entry = await getEntry('guides', 'step1');
 const { Content, headings } = await entry.render();
 ---
 <Layout title="新手教程">
 
     <main>
         <div><Content /></div>
-        <div><a  href="/guides/step1" class="btn btn-primary">开始你的第一步<span>&rarr;</span></a></div>
+        <div><a href="/guides/001" class="btn btn-primary">开始 0.0.1 <span>&rarr;</span></a></div>
     </main>
 </Layout>
 
 <style>
-    img{
-        max-width: 100%;
-    }
+
 </style>
