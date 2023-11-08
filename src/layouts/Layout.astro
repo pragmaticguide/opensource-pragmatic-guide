@@ -4,10 +4,9 @@ interface Props {
 }
 
 const { title } = Astro.props;
-import 'bootstrap/dist/css/bootstrap.css'
-import { ViewTransitions } from 'astro:transitions';
-
-
+import "bootstrap/dist/css/bootstrap.css";
+import { ViewTransitions } from "astro:transitions";
+const isProd = import.meta.env.PROD;
 ---
 
 <!doctype html>
@@ -24,50 +23,74 @@ import { ViewTransitions } from 'astro:transitions';
 		<nav class="py-2 bg-body-tertiary border-bottom">
 			<div class="container d-flex flex-wrap">
 				<ul class="nav me-auto">
-					<li class="nav-item"><a href="https://linux.cn" class="nav-link link-body-emphasis px-2 active" aria-current="page">Linux.cn</a></li>
+					<li class="nav-item">
+						<a
+							href="https://linux.cn"
+							class="nav-link link-body-emphasis px-2 active"
+							aria-current="page">Linux.cn</a>
+					</li>
 				</ul>
 				<ul class="nav">
-					<li class="nav-item"><a href="https://github.com/Linux-CN/pragmatic-guide" class="nav-link link-body-emphasis px-2">Github</a></li>
+					<li class="nav-item">
+						<a
+							href="https://github.com/Linux-CN/pragmatic-guide"
+							class="nav-link link-body-emphasis px-2">Github</a>
+					</li>
 				</ul>
 			</div>
 		</nav>
 		<header class="py-3 mb-4 border-bottom">
 			<div class="container d-flex flex-wrap justify-content-center">
-				<a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+				<a
+					href="/"
+					class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none"
+				>
 					<span class="h1">实用开源教程</span>
 				</a>
 				<ul class="nav nav-pills">
-					<li class="nav-item"><a href="#" class="nav-link">链接</a></li>
+					<li class="nav-item">
+						<a
+							href="/keynotes"
+							class="nav-link text-uppercase fw-bold">Keynotes</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">链接</a>
+					</li>
 
-					<li class="nav-item"><a href="#" class="nav-link">常见问题</a></li>
-					<li class="nav-item"><a href="#" class="nav-link">关于</a></li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">常见问题</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">关于</a>
+					</li>
 				</ul>
 			</div>
 		</header>
-		<div class="container">
+		<div id="content" class="container">
 			<slot />
 		</div>
-		<div class="container">
-			<script src="https://giscus.app/client.js"
-					data-repo="Linux-CN/pragmatic-guide"
-					data-repo-id="R_kgDOKqAclA"
-					data-category="Announcements"
-					data-category-id="DIC_kwDOKqAclM4Cau0g"
-					data-mapping="pathname"
-					data-strict="0"
-					data-reactions-enabled="1"
-					data-emit-metadata="1"
-					data-input-position="top"
-					data-theme="preferred_color_scheme"
-					data-lang="zh-CN"
-					data-loading="lazy"
-					crossorigin="anonymous"
-					async>
-			</script>
-		</div>
-	</body>
+		{
+			isProd && (
+				<div class="container">
+					<script
+						src="https://giscus.app/client.js"
+						data-repo="Linux-CN/pragmatic-guide"
+						data-repo-id="R_kgDOKqAclA"
+						data-category="Announcements"
+						data-category-id="DIC_kwDOKqAclM4Cau0g"
+						data-mapping="pathname"
+						data-strict="0"
+						data-reactions-enabled="1"
+						data-emit-metadata="1"
+						data-input-position="top"
+						data-theme="preferred_color_scheme"
+						data-lang="zh-CN"
+						data-loading="lazy"
+						crossorigin="anonymous"
+						async
+					></script>
+				</div>
+			)
+		}
+	</body><style is:global></style>
 </html>
-<style is:global>
-
-
-</style>
