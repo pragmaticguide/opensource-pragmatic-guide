@@ -1,0 +1,136 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="高效开源（个人篇）—— Keynotes">
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js"
+        integrity="sha512-8Nk/zoTKjNixnM15wXjpF26KR4Ln87cc5Yllc5xP54wwbcKnljAAn2JP+tYAS8+4e7s/XK8XTiDH0Ltw2fmoBQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css"
+        integrity="sha512-V5fKCVKOFy36w8zJmLzPH5R6zU6KvuHOvxfMRczx2ZeqTjKRGSBO9yiZjCKEJS3n6EmENwrH/xvSwXqxje+VVA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/simple.min.css"
+        integrity="sha512-H0Emo35O2iLohWrEdT0VaS7CMV7vutYXmrrQnlEcOCduO9takaRwWQfCkbXzvxKVRchuBn2+JBKZTSRzOghkSw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+
+    <div class="reveal">
+        <div class="slides">
+            <section data-background-color="aquamarine" data-auto-animate>
+                <h2 class="r-fit-text">高效开源（个人篇）</h2>
+                <h3>Effective Open Source Engagement（For Personal）</h3>
+            </section>
+
+            <section data-auto-animate>
+                <div class="two">
+                    <div class="col">
+                        <h3 class="fw-bold">我要开源!</h3>
+                        <p class="fw-lighter">无论是情操还是功利的目的</h4>
+                        <ul class="fs-3 lh-lg">
+                            <li>我热爱开源思想
+                                <ul>
+                                    <li>这听起来是一种非常高尚的情操</li>
+                                    <li>符合我们从小接受的思想教育</li>
+                                </ul>
+                            </li>
+                            <li>
+                                我觉得参与开源能帮助职业发展
+                                <ul>
+                                    <li>各大企业都标榜自己“热爱”开源</li>
+                                    <li>写在简历上似乎很酷</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <img
+                           
+                            src="https://img.linux.net.cn/data/attachment/album/202307/23/150856pc555sxvx1dvvmhc.jpg"
+                            alt="我要开源"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section data-auto-animate>
+                <div class="two">
+                    <div class="col">
+                        <h3 class="fw-bold">每个人都可以开源!</h3>
+                        <p class="fw-lighter">行动胜过思想</h4>
+                        <ul class="fs-3 lh-lg">
+                           <li>我是一个懂编码的人</li>
+                           <li>我是一个有艺术素养的人</li>
+                           <li>我是一个社牛的人</li>
+                           <li>我是一个擅长文字的人</li>
+                           <li>我只是想多一种体验</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <img
+                           
+                            src="https://img.linux.net.cn/data/attachment/album/202307/23/150926gp37nz07w1jd1wcj.jpg"
+                            alt="我要开源"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section data-auto-animate>
+                <div class="two">
+                    <div class="col">
+                        <h3 class="fw-bold">你的第一步</h3>
+                        <p class="fw-lighter">千里之行</h4>
+                        <ul class="fs-3 lh-lg">
+                         <li>了解开源是什么？<ul>
+                            <li>一种思想和文化</li>
+                            <li>一种行为模式</li>
+                         </ul></li>
+                         <li>如何找到「社区」<ul>
+                            <li>它是一种群体行为</li>
+                            <li>找到那些以特定方式组合起来的人</li>
+                         </ul></li>
+                         <li>如何加入</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <img
+                            src="https://img.linux.net.cn/data/attachment/album/202307/23/150939z0crw7jr2c6r6u5m.jpg"
+                            alt="我要开源"
+                        />
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"
+        integrity="sha512-QYXU3Cojl94ZRiZRjUZpyg1odj9mKTON9MsTMzGNx/L3JqvMA3BQNraZwsZ83UeisO+QMVfFa83SyuYYJzR9hw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+    <script>
+        Reveal.initialize({
+            slideNumber: true,
+        });
+    </script>
+</Layout>
+
+<style>
+    .reveal {
+        height: 600px;
+    }
+    .two {
+        display: flex;
+    }
+    .col {
+        flex: 1;
+    }
+</style>
