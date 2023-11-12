@@ -1,20 +1,37 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { getEntry } from 'astro:content';
-const {body:markdown} = await getEntry('slides', 'index');
+import { getEntry } from "astro:content";
+const { body: markdown } = await getEntry("slides", "index");
 ---
 
 <Layout title="高效开源（个人篇）—— Keynotes">
     <div style="height: 450px;width:800px;">
-        <div id="slides"  style="height: 450px;width:800px;"></div>
+        <div id="slides" style="height: 450px;width:800px;"></div>
     </div>
-    <script is:inline src="/remark-latest.min.js">
-    </script>
+    <script is:inline src="/remark-latest.min.js"></script>
     <script define:vars={{ markdown }}>
         var slideshow = remark.create({
             container: document.getElementById("slides"),
-            ratio: '16:9',
-            source:markdown
+            ratio: "16:9",
+            source: markdown,
         });
+        document.onload = function () {
+            document.getElementById("slides").focus();
+        };
     </script>
 </Layout>
+
+<style is:inline>
+    .left-column {
+        width: 49%;
+        float: left;
+    }
+    .right-column {
+        width: 49%;
+        float: right;
+    }
+    #slides > div.remark-slides-area > div.remark-slide-container.remark-visible img {
+        width: 100%;
+        height: 100%;
+    }
+</style>

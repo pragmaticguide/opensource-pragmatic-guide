@@ -90,6 +90,7 @@ class: center, middle
 
 ## 或许，你就是潜在的大神
 
+.left-column[
 - 这是你想要的么？
     - 你喜欢这些么？
     - 有没有让你失望的地方？
@@ -99,6 +100,10 @@ class: center, middle
 - 之后，取决于你
     - 浅尝辄止还是作为生活方式？
 
+]
+.left-column[
+ ![](https://img.linux.net.cn/data/attachment/album/202307/23/151135qm3zqgql5zvtxiti.jpg)
+]
 ---
 class: center, middle
 ### 开源是一种 工作和生活的方式  
@@ -106,4 +111,8 @@ Open source is a way of working and living
 
 #### 你也许喜欢，也许不喜欢  
 You may like it, or you may not.
+
+---
+
+
 <!-- syntax guide on here: https://github.com/gnab/remark/wiki/Markdown  -->
