@@ -16,6 +16,7 @@ class: center, middle
   - 我热爱开源思想
       - 这听起来是一种非常高尚的情操
       - 符合我们从小接受的思想教育
+
   - 我觉得参与开源能帮助职业发展
       - 各大企业都标榜自己“热爱”开源
       - 写在简历上似乎很酷
@@ -41,11 +42,11 @@ class: center, middle
 ## 行动胜过思想
 
 .left-column[
-  - 我是一个懂编码的人
-  - 我是一个有艺术素养的人
-  - 我是一个社牛的人
-  - 我是一个擅长文字的人
-  - 我只是想多一种体验
+- 我是一个懂编码的人
+- 我是一个有艺术素养的人
+- 我是一个社牛的人
+- 我是一个擅长文字的人
+- 我只是想多一种体验
 ]
 
 .left-column[
@@ -283,8 +284,5 @@ Open source is a way of working and living
 #### 你也许喜欢，也许不喜欢  
 
 You may like it, or you may not.
-
----
-
 
 <!-- syntax guide on here: https://github.com/gnab/remark/wiki/Markdown  -->
