@@ -4,9 +4,9 @@ import { getEntry } from "astro:content";
 const { body: markdown } = await getEntry("slides", "index");
 ---
 
-<Layout title="高效开源（个人篇）—— Keynotes">
-    <div style="height: 720px;width:1280px;margin:auto">
-        <div id="slides" style="height: 720px;width:1280px;"></div>
+<Layout title="实用开源指南（个人篇）—— Keynotes">
+    <div style="height:720px; width:1280px; margin:auto">
+        <div id="slides" style="height:720px; width:1280px;"></div>
     </div>
     <script is:inline src="/remark-latest.min.js"></script>
     <script define:vars={{ markdown }}>
@@ -22,13 +22,15 @@ const { body: markdown } = await getEntry("slides", "index");
 </Layout>
 
 <style is:inline>
-    .left-column {
-        width: 49%;
-        float: left;
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
     }
-    .right-column {
-        width: 49%;
-        float: right;
+    .column {
+        width: 48%;
+        margin: 10px 1%;
     }
     #slides > div.remark-slides-area > div.remark-slide-container.remark-visible img {
         width: 100%;
