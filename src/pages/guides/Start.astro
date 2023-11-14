@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import {  getEntry } from 'astro:content';
+import dayjs from "dayjs";
+import LocalizedFormat from 'dayjs/plugin/localizedFormat'
+dayjs.extend(LocalizedFormat)
+
+const entry = await getEntry('guides', 'Start');
+const { Content,remarkPluginFrontmatter } = await entry.render();
+const lastModified = dayjs(remarkPluginFrontmatter.lastModified).format("LLL");
+---
+<Layout title="开源实用指南">
+
+    <main>
+        <p>最后更新时间: {lastModified}</p>
+        <div><Content /></div>
+        <div><a href="/guides/Embrace-Open-Source" class="btn btn-primary">我要开源！<span>&rarr;</span></a></div>
+    </main>
+</Layout>
+
+<style>
+    img{
+        max-width: 100%;
+    }
+</style>

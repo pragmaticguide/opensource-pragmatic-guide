@@ -1,6 +1,6 @@
 class: center, middle
             
-# 实用开源指南（个人篇）
+# 开源实用指南（个人篇）
 ## A Pragmatic Guide to Open Source (For Personal)
 
 ???

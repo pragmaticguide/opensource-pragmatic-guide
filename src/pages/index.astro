@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
-<Layout title="实用开源教程 | Pragmatic Guide for Opensource Newbie">
+<Layout title="开源实用教程 | A Pragmatic Guide for Opensource">
 	<div class="px-4 py-5 my-5 text-center">
 		<h2 class="display-5 fw-bold text-body-emphasis">给新手的开源教程</h2>
 		<div class="col-lg-6 mx-auto">
@@ -17,22 +17,25 @@ import Card from '../components/Card.astro';
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="/guides/"
-				title="给新手的教程"
-				body="从这里开始你的开源社区第一步"
+				title="走进开源"
+				body="阅读指南，从这里开始你的开源社区第一步"
 			/>
-
+			<Card
+				href="/keynotes/"
+				title="观看演讲"
+				body="观看演讲，从这里开始你的开源社区第一步"
+			/>
 		</ul>
-		<h2 class="my-4">社区</h2>
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="https://github.com/Linux-CN/pragmatic-guide/discussions"
+				href="https://github.com/pragmaticguide/opensource-pragmatic-guide/discussions"
 				title="发表看法"
 				body="积极参与社区，从发出你的第一个看法开始"
 			/>
 			<Card
 				href="/how-to/contribute"
 				title="参与贡献"
-				body="参与共享使用开源教程，从这里开始你的第一步"
+				body="参与贡献这份开源实用教程，从这里开始你的第一步"
 			/>
 		</ul>
 

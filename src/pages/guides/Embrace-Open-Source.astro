@@ -7,16 +7,16 @@ dayjs.extend(LocalizedFormat)
 
 
 
-const entry = await getEntry('guides', 'start');
+const entry = await getEntry('guides', 'Embrace-Open-Source');
 const { Content,remarkPluginFrontmatter } = await entry.render();
 const lastModified = dayjs(remarkPluginFrontmatter.lastModified).format("LLL");
 ---
-<Layout title="新手教程">
+<Layout title="开源实用指南">
 
     <main>
         <p>最后更新时间: {lastModified}</p>
         <div><Content /></div>
-        <div><a  href="/guides/step1" class="btn btn-primary">开始你的第一步<span>&rarr;</span></a></div>
+        <div><a href="/guides/Anyone-can-love-open-source" class="btn btn-primary">每个人都可以爱开源<span>&rarr;</span></a></div>
     </main>
 </Layout>
 
