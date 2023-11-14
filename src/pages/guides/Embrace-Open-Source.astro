@@ -7,7 +7,7 @@ dayjs.extend(LocalizedFormat)
 
 
 
-const entry = await getEntry('guides', 'Embrace-Open-Source');
+const entry = await getEntry('guides', 'embrace-open-source');
 const { Content,remarkPluginFrontmatter } = await entry.render();
 const lastModified = dayjs(remarkPluginFrontmatter.lastModified).format("LLL");
 ---

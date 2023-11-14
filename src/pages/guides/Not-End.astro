@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import {  getEntry } from 'astro:content';
 
 
-const entry = await getEntry('guides', 'Not-End');
+const entry = await getEntry('guides', 'not-end');
 const { Content } = await entry.render();
 ---
 <Layout title="开源实用指南">
