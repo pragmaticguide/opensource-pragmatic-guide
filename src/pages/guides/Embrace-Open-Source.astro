@@ -1,11 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import {  getEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
 import dayjs from "dayjs";
 import LocalizedFormat from 'dayjs/plugin/localizedFormat'
 dayjs.extend(LocalizedFormat)
-
-
 
 const entry = await getEntry('guides', 'embrace-open-source');
 const { Content,remarkPluginFrontmatter } = await entry.render();
@@ -14,8 +12,8 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified).format("LLL");
 <Layout title="开源实用指南">
 
     <main>
-        <p>最后更新时间: {lastModified}</p>
         <div><Content /></div>
+        <p class="lastModified">最后更新时间: {lastModified}</p>
         <div><a href="/guides/Anyone-can-love-open-source" class="btn btn-primary">每个人都可以爱开源<span>&rarr;</span></a></div>
     </main>
 </Layout>
@@ -23,5 +21,11 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified).format("LLL");
 <style>
     img{
         max-width: 100%;
+    }
+    .lastModified {
+        font-size: 0.8em;
+        font-style: italic;
+        color: #666;
+        float: right;
     }
 </style>

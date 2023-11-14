@@ -4,7 +4,7 @@ import { getEntry } from "astro:content";
 const { body: markdown } = await getEntry("slides", "index");
 ---
 
-<Layout title="实用开源指南（个人篇）—— Keynotes">
+<Layout title="开源实用指南（个人篇）—— Keynotes">
     <div style="height:720px; width:1280px; margin:30px auto;">
         <div id="slides" style="height:720px; width:1280px;"></div>
     </div>
@@ -32,7 +32,7 @@ const { body: markdown } = await getEntry("slides", "index");
         width: 48%;
         margin: 10px 1%;
     }
-    #slides > div.remark-slides-area > div.remark-slide-container.remark-visible img {
+    #slides > div.remark-slides-area > div.remark-slide-container img,#slides > div.remark-preview-area > div.remark-slide-container img {
         width: 100%;
         height: 100%;
     }
