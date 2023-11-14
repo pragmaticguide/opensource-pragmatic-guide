@@ -1,0 +1,19 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import {  getEntry } from 'astro:content';
+
+
+const entry = await getEntry('guides', '0.2.0');
+const { Content } = await entry.render();
+---
+<Layout title="开源实用指南">
+
+    <main>
+        <div><Content /></div>
+        <div><a href="/guides/123" class="btn btn-primary">1、2、3……<span>&rarr;</span></a></div>
+    </main>
+</Layout>
+
+<style>
+
+</style>

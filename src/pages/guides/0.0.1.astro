@@ -3,14 +3,14 @@ import Layout from '../../layouts/Layout.astro';
 import {  getEntry } from 'astro:content';
 
 
-const entry = await getEntry('guides', '010');
+const entry = await getEntry('guides', '0.0.1');
 const { Content } = await entry.render();
 ---
-<Layout title="新手教程">
+<Layout title="开源实用指南">
 
     <main>
         <div><Content /></div>
-        <div><a href="/guides/020" class="btn btn-primary">开始 0.2.0 <span>&rarr;</span></a></div>
+        <div><a href="/guides/Practice-beats-theory" class="btn btn-primary">实践胜过理论<span>&rarr;</span></a></div>
     </main>
 </Layout>
 
