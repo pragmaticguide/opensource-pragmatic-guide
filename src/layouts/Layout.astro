@@ -20,31 +20,6 @@ const isProd = import.meta.env.PROD;
 		<!-- <ViewTransitions /> -->
 	</head>
 	<body>
-		<nav class="py-2 bg-body-tertiary border-bottom d-print-none">
-			<div class="container d-flex flex-wrap">
-				<ul class="nav me-auto">
-					<li class="nav-item">
-						<a
-							href="https://linux.cn"
-							class="nav-link link-body-emphasis px-2 active"
-							aria-current="page"
-							><img
-								src="https://img.linux.net.cn/static/image/common/linux-logo-2022nw.svg"
-								style="height: 30px;"
-							/></a
-						>
-					</li>
-				</ul>
-				<ul class="nav">
-					<li class="nav-item">
-						<a
-							href="https://github.com/pragmaticguide/opensource-pragmatic-guide"
-							class="nav-link link-body-emphasis px-2">GitHub</a
-						>
-					</li>
-				</ul>
-			</div>
-		</nav>
 		<header class="py-3 mb-4 border-bottom d-print-none">
 			<div class="container d-flex flex-wrap justify-content-center">
 				<a
@@ -60,16 +35,10 @@ const isProd = import.meta.env.PROD;
 							class="nav-link text-uppercase fw-bold">演讲稿</a
 						>
 					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">链接</a>
-					</li>
-
-					<li class="nav-item">
-						<a href="#" class="nav-link">常见问题</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">关于</a>
-					</li>
+					<a
+						href="https://github.com/pragmaticguide/opensource-pragmatic-guide"
+						class="nav-link px-2">GitHub</a
+					>
 				</ul>
 			</div>
 		</header>
@@ -103,8 +72,15 @@ const isProd = import.meta.env.PROD;
 		<footer class="py-3 my-4 d-print-none">
 			<ul class="nav justify-content-center border-bottom pb-3 mb-3">
 				<li class="nav-item">
-					<a href="/" class="nav-link px-2 text-body-secondary"
-						>首页</a>
+					<a
+						href="https://linux.cn"
+						class="nav-link link-body-emphasis px-2 active"
+						aria-current="page"
+						><img
+							src="https://img.linux.net.cn/static/image/common/linux-logo-2022nw.svg"
+							style="height: 30px;"
+						/></a
+					>
 				</li>
 			</ul>
 		</footer>
