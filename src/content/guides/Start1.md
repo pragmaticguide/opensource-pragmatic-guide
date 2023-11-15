@@ -1,7 +1,7 @@
 ---
 title: 开始
 pubDate: 2023-11-14
-cover: https://img.linux.net.cn/data/attachment/album/202307/23/150856pc555sxvx1dvvmhc.jpg
+cover: https://img.linux.net.cn/data/attachment/album/202307/23/155516e1do4zwhw3htb1ss.jpg
 ---
 
 这篇演讲主要针对的受众是刚刚接触开源的学生、教师、职员等。这篇演讲分步骤地介绍了如何从一个不了解但对开源感兴趣的新人开始，如何逐渐参与和拥抱开源，从“玩具项目”到社区项目，再到发现自己的社区之路，并最终有可能成为重要的开源先锋。

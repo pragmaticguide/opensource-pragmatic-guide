@@ -18,7 +18,7 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified).format("LLL");
             <img class="cover" src={entry.data.cover} />
         </div>
         <p class="lastModified">最后更新时间: {lastModified}</p>
-        <div><a href="/guides/0.0.1" class="btn btn-primary">你的第一步<span>&rarr;</span></a></div>
+        <div><a href="/guides/Your-first-step" class="btn btn-primary">你的第一步<span>&rarr;</span></a></div>
     </main>
 </Layout>
 
@@ -32,10 +32,14 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified).format("LLL");
         display: flex;
         flex-direction: row;
     }
+    .content {
+        margin: 10px;
+    }
     .cover {
         max-width: 100%;
         width: 512px;
         height: auto;
+        margin: 10px;
     }
     .lastModified {
         font-size: 0.8em;
