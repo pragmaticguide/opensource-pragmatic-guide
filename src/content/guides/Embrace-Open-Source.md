@@ -1,7 +1,7 @@
 ---
 title: 我要开源！
 pubDate: 2023-11-14
-cover: https://img.linux.net.cn/data/attachment/album/202307/23/150926gp37nz07w1jd1wcj.jpg
+cover: https://img.linux.net.cn/data/attachment/album/202307/23/150856pc555sxvx1dvvmhc.jpg
 ---
 
 今天，我在这里与大家探讨一个我内心深处热爱的话题——开源。无论出于理想主义还是实用性的目的，我坚信开源的力量。它不仅代表着崇高的思想追求，更为个人和职业发展提供了巨大的机遇。

@@ -143,7 +143,7 @@ class: center, middle
 
 ---
 
-# 理论不如实践
+# 实践胜过理论
 ## Do it yourself
 
 .main[
