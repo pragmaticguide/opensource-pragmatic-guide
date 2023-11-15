@@ -12,15 +12,30 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified).format("LLL");
 <Layout title="开源实用指南">
 
     <main>
-        <div><Content /></div>
+        <h2>{entry.data.title}</h2>
+        <div class="container">
+            <div class="content"><Content /></div>    
+            <img class="cover" src={entry.data.cover} />
+        </div>
         <p class="lastModified">最后更新时间: {lastModified}</p>
         <div><a href="/guides/0.2.0" class="btn btn-primary">0.2.0<span>&rarr;</span></a></div>
     </main>
 </Layout>
 
+
 <style>
-    img{
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+    .cover {
         max-width: 100%;
+        width: 512px;
+        height: auto;
     }
     .lastModified {
         font-size: 0.8em;
