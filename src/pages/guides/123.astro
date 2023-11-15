@@ -14,8 +14,8 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified).format("LLL");
     <main>
         <h2>{entry.data.title}</h2>
         <div class="container">
-            <div class="content"><Content /></div>    
-            <img class="cover" src={entry.data.cover} />
+            <div class="col-md-4 p-2"><Content /></div>    
+            <img class="col-md-8 p-2" src={entry.data.cover} />
         </div>
         <p class="lastModified">最后更新时间: {lastModified}</p>
         <div><a href="/guides/Not-End" class="btn btn-primary">不是结束<span>&rarr;</span></a></div>
