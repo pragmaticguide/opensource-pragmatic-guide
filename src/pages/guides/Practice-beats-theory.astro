@@ -13,7 +13,7 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified).format("LLL");
 
     <main>
         <h2>{entry.data.title}</h2>
-        <div class="container">
+        <div class="row">
             <div class="col-md-4 p-2"><Content /></div>    
             <img class="col-md-8 p-2" src={entry.data.cover} />
         </div>
