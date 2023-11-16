@@ -18,7 +18,10 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified).format("LLL");
             <img class="col-md-4 p-2" src={entry.data.cover} />
         </div>
         <p class="lastModified">最后更新时间: {lastModified}</p>
-        <div><a href="/guides/0.0.1" class="btn btn-primary">0.0.1<span>&rarr;</span></a></div>
+        <div>
+            <a href="/guides/Anyone-can-love-open-source" class="btn btn-primary"><span>&larr;</span>每个人都可以爱开源</a>
+            <a href="/guides/0.0.1" class="btn btn-primary">0.0.1<span>&rarr;</span></a>
+        </div>
     </main>
 </Layout>
 
